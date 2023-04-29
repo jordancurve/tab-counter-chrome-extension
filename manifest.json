@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Counter",
+  "version": "1.0",
+  "description": "Counts the number of open browser tabs in the current window",
+  "action": {
+    "default_title": "Tab counter",
+    "default_icon": "icons/48x48.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["tabs"],
+  "icons": {
+    "48": "icons/48x48.png",
+    "72": "icons/72x72.png",
+    "128": "icons/128x128.png",
+    "256": "icons/256x256.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
